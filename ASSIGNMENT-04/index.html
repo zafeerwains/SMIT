@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Static Web :HTML/CSS</title>
+    <style>
+        a {
+            color: grey;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+
+            <nav><a href="index.html">Home</a> &emsp;
+                <a href="lecture">Lectures</a>&emsp;
+                <a href="assignment.html">Assignments</a>&emsp;
+                <a href="projects.html">Find Project</a>&emsp;
+                <a href="labs.html">Labs </a>&emsp;
+                <a href="docs.html">Docs</a>
+            </nav>
+        </center>
+
+    </header>
+    <main>
+        <div>
+            <h1 style="text-align: center;">Assignment 2 Static Web :HTML/CSS</h1>
+            <p style="text-align: center;">Due Sunday, <date>January 9</date> <time>11:59pm PST</time></p>
+        </div>
+        <div>
+            <h1>Setup</h1>
+            <p>Accept the Github Class room <span style="color: orange;">assignment</span> and clone this repo that
+                contains stencil code for Assignement 2.</p>
+        </div>
+        <div>
+            <h1>Introduction</h1>
+            <p>This is a multi-part assignement with the objective of making you comfotable working with HTML and CSS.By
+                the end of this Assignement.You will have styled some rectagular blocks and created a simple version of
+                Twitter's home page</p>
+            <p>If this Assignement overwhelming to you,pleases come to see TA at TA hours to talk through some
+                strategies for tackling it.We expext this Assignment a time consuming as we cover a lot of fundamental
+                techniques but with a good strategyit can be finished in a reasonable amount of time.</p>
+            <p>Note: only CSS and HTML will be used for assignment.if you want to use Javascript(or libraries suc as
+                JQuery)then feel free to,but we will only be grading correctness on your CSS and HTML.</p>
+            <p>If you can, <b>start earlier!</b></p>
+        </div>
+        <div>
+            <h1>Part One</h1>
+            <h2>Specifications</h2>
+            <p>Now you can understand some of the basics of HTML and CSS,Let,s take a look that how to align HTML
+                elements.There are multiple ways to align HTML elements,but in this part,we recomment using flexboxesas
+                they are widely used in modern web developement(for example Bootstrap V4 is built omn top of flexboxes).
+            </p>
+            <p>Refer to this webpage on how to use Flexboxes: <span style="color: orange;">CSS Flexbox Guide.</span></p>
+            <p>Also feel free to use online resources such as Stack Overflow,MDN,W3 and Google for reference.</p>
+            <p>When you open the provided HTML file <span style="color:darkmagenta;"> part1/index.html</span> it should
+                look like this:</p>
+
+        </div>
+        <div>
+            <h4>Assignment 1</h4>
+            <h4>Provided Examples</h4>
+            <h4>Row 1</h4>
+            <div style="background-color:blue; height: 100%; width: 100%; ">
+                <div style="background-color: red; height: 25px; width: 50%;"></div>
+            </div>
+            <h4>Row 2</h4>
+            <div style="background-color:blue; height: 25px; width: 100%; ">
+                <div style="background-color: green; height: 25px; width: 90%;"></div>
+            </div>
+            <h4>Row 3</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 4</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 5</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 6</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 7</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 8</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+            <h4>Row 9</h4>
+            <div style="background-color: green; height: 25px; width: 100%;"></div>
+        </div>
+        <hr>
+        <div style="background-color: white;">
+            <p>
+                As you can see , there are 9 rectangles. The styling and makeup of the first two rectangles are already
+                built for you.Your task is to apply styling and add div elements inside of the next 7 green rectangles
+                blocks to create a web page that looks like this:
+            </p>
+            <h3>Assignment 1</h3>
+            <h3>Provided Examples</h3>
+            <h4>Row 1</h4>
+            <div style="width: 100%;height: 30px; background-color:blue;">
+                <div style="width: 50%;height: 30px;background-color:red;"></div>
+            </div>
+            <h4>Row 2</h4>
+            <div style="width: 100%;height: 30px;background-color: green;">
+                <div style="width: 10%;height: 30px;background-color: blue;">
+
+                </div>
+            </div>
+
+            <h4>Row 3</h4>
+            <div style="width: 100%;background-color:blue;height: 30px;">
+
+                <div style="width: 90%;background-color: green;height: 30px;">
+                    <div style="width: 10%;background-color: red;height: 30px;">
+                    </div>
+                </div>
+
+            </div>
+            <h4>Row 4</h4>
+            <div style="width: 100%;height: 30px;background-color: red;">
+                <div style="width: 10%;height: 30px;background-color: blue;">
+                </div>
+            </div>
+            <h4>Row 5</h4>
+            <div style="width: 100%;height: 30px;background-color: green;">
+                <center>
+                    <div style="width: 2%;height: 30px;background-color: red;padding-top: 1px;"></div>
+                </center>
+            </div>
+        </div>
+        <h4>Row 6</h4>
+        <div style="width: 100%;height: 30px;background-color: red;">
+            <center>
+                <div style="width: 4%;height: 30px;background-color:blue;padding-top: 1px;"></div>
+            </center>
+        </div>
+        </div>
+
+        <h4>Row 7</h4>
+        <div style="width: 100%;height: 30px;background-color: red;">
+            <div style="width: 90%;height: 30px;background-color: blue;float: right;">
+                <center>
+                    <div style="width: 100%;height: 10px;background-color: green;float: right;margin-top: 8px;"></div>
+                </center>
+
+            </div>
+        </div>
+        </div>
+        <h4>Row 8</h4>
+        <div style="margin: 0px;">
+            <div style="width: 7%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: green;display: inline-block;"></div>
+            <div style="width: 7%;height: 30px;background-color: yellow;display:inline-block ;"></div>
+            <div style="width: 15%;height: 30px;background-color: green;display: inline-block;"></div>
+            <div style="width: 7%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: green;display: inline-block;"></div>
+            <div style="width: 7%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: green;display: inline-block;"></div>
+            <div style="width: 7%;height: 30px;background-color: yellow;display: inline-block;"></div>
+        </div>
+        <h4>Row 9</h4>
+        <div>
+            <div style="width: 15%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 5px;height: 30px;background-color: green; display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 5px;height: 30px;background-color: green; display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 5px;height: 30px;background-color: green; display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: yellow;display: inline-block;"></div>
+            <div style="width: 5px;height: 30px;background-color: green; display: inline-block;"></div>
+            <div style="width: 15%;height: 30px;background-color: yellow; display: inline-block;"></div>
+
+
+
+        </div>
+        </div>
+        <div>
+            <p>
+                Note these rectangular blocks should be responsive . Here is what they look like when the window is thinner:
+            </p>
+            <h3><b>Assignment 1</b></h3>
+            <h3><b>Provided Examples</b></h3>
+            <h3><b>Row 1</b></h3>
+            <div style="width: 50%;background-color: red;height: 40px;">
+                <div style="width: 50%;background-color: blue;height: 40px;">
+                </div>
+            </div>
+            <h3><b>Row 2</b></h3>
+            <div style="width: 50%;height: 40px;background-color: green;">
+                <div style="width: 10%;height: 40px;background-color: blue;float: right;">
+    
+                </div>
+            </div>
+            <h3><b>Student TODO <sub>s</sub></b></h3>
+            <h3><b>Row 3</b></h3>
+            <div style="width: 50%;background-color:blue;height: 40px;">
+    
+                <div style="width: 90%;background-color: green;height: 40px;">
+                    <div style="width: 10%;background-color: red;height: 40px;">
+                    </div>
+                </div>
+    
+            </div>
+            <h3><b>Row 4</b></h3>
+            <div style="width: 50%;height: 40px;background-color: red;">
+                <div style="width: 10%;height: 40px;background-color: blue;float: right;">
+    
+                </div>
+            </div>
+            <h3><b>Row 5</b></h3>
+            <div style="width: 50%;height: 40px;background-color: green;">
+                <center>
+                    <div style="width: 3%;height: 20px;background-color: red;padding-top: 2px;margin: 2px;"></div>
+                </center>
+    
+            </div>
+            </div>
+            <h3><b>Row 6</b></h3>
+            <div style="width: 50%;height: 40px;background-color: red;">
+                <center>
+                    <div style="width: 5%;height: 40px;background-color:blue;"></div>
+                </center>
+    
+            </div>
+            <h3><b>Row 7</b></h3>
+            <div style="width: 50%;height: 40px;background-color: red;">
+                <div style="width: 90%;height: 40px;background-color: blue;float: right;">
+                    <center>
+                        <div style="width: 100%;height: 15px;background-color: green;float: right;margin-top: 8px;"></div>
+                    </center>
+    
+                </div>
+            </div>
+            </div>
+            <h3><b>Row 8</b></h3>
+            <div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow; display: inline-block;"></div>
+    
+    
+    
+            </div>
+    
+            <h3><b>Row 9</b></h3>
+            <div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow;display: inline-block;"></div>
+                <div style="width: 10px;height: 40px;background-color: green; display: inline-block;"></div>
+                <div style="width: 5%;height: 40px;background-color: yellow; display: inline-block;"></div>
+    
+    
+    
+            </div>
+        </div>
+        <div>
+            <p> We will describe how each row will behave dynamically and provide some hints for a possible approach.</p>
+                <ol start="3">
+                    <li>For the third row, the red and blue end rectangles should remain the same width, and the green space should shrink. <br><br>
+                    <i>Possible Approach: Have a div with a red background and a div with a blue background, both with fixed width. Use an appropriate value for <span style="color: sandybrown">Justily Content</span>.</i></li>
+                    <br>
+                    <li>For the fourth row, the blue end rectangle should remain the same width, and the red rectangle should shrink. <br><br>
+                    <i>Possible Approach: Have a div with a red background and a div with a blue background. Have a fixed width on the blue div. Use <span style="color: sandybrown">Flex Grow</span></i></li>
+                    <br>
+                    <li>For the fifth row, the red square should remain the same size, but always remain in the center of the green rectangle. <br><br>
+                    <i>Hint: Think about how to keep a div fixed size and how to align something in the absolute center of the parent element</i></li>
+                    <br>
+                    <li>For the sixth row, the blue rectangle should remain the same size, while the red rectangles should shrink. The blue rectangle should remain in the center of the row.
+                    <br><br>
+                    <i>Hint: Use two red divs.</i></li><br>
+                    <li>For the seventh row, the red rectangle should remain the same width.
+                    <br><br>
+                    <i>Hint: Nest divs and use <code><span style="color: hotpink">background-color: transparent</span></code></i></li><br>
+
+                    <li>For the eighth row, the orange rectangles should remain the same size while the green space between them shrinks.</li>
+                    <br>
+                    <li>For the ninth row, the green space between the orange rectangles should remain the same width while the orange rectangles narrow.</li><br>
+            </ol>
+                    <p>The examples we provided with the first two rectangular blocks use flexboxes. You are not required to use flexboxes for the next 7 rows, but we recommend it as it will also be useful in part 2 of this assignment.</p>
+
+                    <p>You should only have to use the <code><span style="color: hotpink">div</span></code> html element to complete this assignment. Also, <b>none of the divs you create inside of the provided wrapper divs should have <code><span style="color: hotpink">background-color: green;</span></code></b> But it is valid to specify non-green background colors for any divs, including the wrapper.</p>
+                    
+                    <p>Try to style the boxes as closely to the solution image as possible don't worry about getting exact dimensions or rgb values. We care about what structure, CSS styles you used, and the dynamic behavior of the page. However just for reference,</p>
+                <ul>
+                    <li>The color of the boxes we used are <code><span style="color: hotpink">background-color: </span> </code>    
+                    <code><span style="color: white; background-color: red;">Red</span>,
+                          <span style="color: white; background-color: blue;">Blue</span>,</code> and
+                    <code><span style="color: white; background-color: orange;">Orange</span></code>
+                    </li>
+                    <li>Some width/height values we used are <code><span style="color: hotpink">20px, 40px, 80px</span></code></li>
+                </ul>
+                    <p>You are not required to use Bootstrap in this part. You can use if you want, but we actually recommend writing plain CSS. Just for this part, inline CSS is acceptable, but you should generally avoid using inline CSS in the future.
+                    </p>
+                <h1>General Notes</h1>
+                    <p>
+                    As a reminder, it's a good idea to run your HTML and CSS syntax through validators You should also consider using an accessibility checker such as WAVE
+                    </p>
+                <h1>Troubleshooting</h1>
+
+                    <p>There are hundreds of HTML and CSS tags, properties, and values, and we do not expect students to learn each one by heart. However, this assignment and the first lab are intended for you to intuitively understand the languages, and to be proficient at knowing how to tackle a design by the end of the semester.</p>
+
+                    <P>If you're having problems, there are many guides on HTML and CSS online (CSSTricks and MDN are your friends), as well as on our resources page.</P>
+                    
+                    <P>As always, if you are stuck on a particular part, you can always talk to the friendly TAs or ask questions on course piazza (check your email for a signup link).</P>
+
+            <b>As a general rule of thumb, do not expect TAs to be able to solve every web problem you have. Even the most adept web developer can struggle a lot with specific CSS rules to use.</b>
+        </div>
+
+    </main>
+    <footer style="text-align: center; background-color: grey;">
+        <p><b> &copy; 2022 |Muhammad Umair Ahmad </b></p>
+        <cite style="color:orange;"><b>www.umairahmad.net</b></cite><br>
+    </footer>
+</body>
+
+</html>
