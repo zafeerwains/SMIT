@@ -1,0 +1,25 @@
+div {
+    background-color: rgb(245, 245, 245);
+}
+
+h3 {
+    padding-left: 400px;
+}
+
+.c2 {
+    margin-left: 250px;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid rgb(218, 218, 218);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 12px;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+*{
+    color: white;
+    background-color: rgb(22, 12,14);
+ 
+}
+nav{
+    background-color: black;
+}
+header,footer{
+    background-color: black;
+}
+main{
+  
+}
+h3{
+    padding-left: 400px;
+}
+
+.c2{
+    margin-left: 250px;
+}
+table,th,tr,td{
+    border: 1px solid rgb(49, 49, 49);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 12px;
+}
+footer{
+ 
+    text-align: center;
+}
