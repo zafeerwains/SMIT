@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    background-color: #f1faee;
+}
+
+header,
+footer {
+    background-color: #1d3557;
+}
+
+header,
+nav {
+    background-color: #1d3557;
+}
+
+#rs,
+#os {
+    width: 100%;
+    min-height: 50px;
+}
+
+#bd {
+    width: 100%;
+    min-height: 100px;
+}
+
+#co:hover {
+    background-color: rgb(226, 83, 83);
+}
+
+#cs:hover {
+    background-color: rgb(226, 83, 83);
+}
