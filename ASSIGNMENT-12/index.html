@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ASSIGNMENT-12</title>
+</head>
+
+<body>
+    <header class="full container-fluid bg-dark position-sticky top-0 z-1 ">
+        <nav class="navbar container-xxl navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="javascript:void(0)">Assignments</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="javascript:void(0)">Chapter 26-30</a>
+                        </li>
+                </div>
+            </div>
+            <div>
+                <form class=" d-flex ">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col text-center text-secondary">
+                    <h2>Ch # 26 - 30 | Numbers, Integers & Decimals</h2>
+                </div>
+                <hr>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 col-md-6    ">
+                    <h3 class="text-center">Input</h3>
+                    <div class="m-3 border p-4  d-flex align-items cente rounded border-dark" id="input">
+                        <input type="text" class="form-control bg-transparent" id="inputvalue"
+                            placeholder="Type your text here">
+                        <button class="btn btn-outline-secondary " onclick="clear1()">Clear</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6  ">
+                    <div class="text-center">
+                        <h3>Original Number</h3>
+                    </div>
+                    <div class="m-3 border fw-3 rounded border-dark text-center pt-3 p-3 text-light" id="input1">
+                        <p class="fs-3">25.123456</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 col-md-6    ">
+                    <h3 class="text-center"> Buttons</h3>
+                    <div class="m-3 border rounded border-dark text-center py-4" id="input">
+                        <button class="btn btn-danger my-1 px-5 text-center" onclick="round()">Round A Number</button>
+                        <button class="btn btn-danger my-1 px-5 text-center" onclick="floor()">Floor A Number</button>
+                        <br> <button class="btn btn-danger my-1 px-5 text-center" onclick="ceil()">Ceil A
+                            Number</button>
+                        <button class="btn btn-danger my-1 px-5 text-center" onclick="random()">Generate A Random
+                            Number</button>
+                        <br><button class="btn btn-danger my-1 px-5 text-center" onclick="dice()">Throw A Dice</button>
+                        <button class="btn btn-danger my-1 px-5 text-center" onclick="password()">Generate A Strong
+                            Password</button>
+                        <br><button class="btn btn-danger my-1 px-5 text-center" onclick="cs()">Converting
+                            Strings</button>
+                        <button class="btn btn-danger my-1 px-5 text-center" onclick="cl()">Controlling Length</button>
+                        <br><button class="btn btn-danger my-1 px-5 text-center" onclick="cgst()">Calculate GST</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6  ">
+                    <h3 class="text-center"> Output/Result</h3>
+                    <div class="m-3 border rounded border-dark text-center " id="output"></div>
+                    <div class="text-center">
+                        <button class="text-center btn  clear mb-4 border border-secondary" onclick="clear2()"
+                            id="btn">Clear
+                            output</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="ftor pt-1 container-fluid bg-dark text-center text-secondary">
+        <div class="row ">
+            <div class="col py-2">
+                <p>&copy;2022. Assignmnet By <a href="wwww.umairahmad.net"><b>wwww.umairahmad.net</b></a></p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
