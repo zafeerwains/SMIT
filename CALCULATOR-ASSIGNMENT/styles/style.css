@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black !important;
+}
+
+#output {
+  min-height: 100px;
+  background-color: antiquewhite !important;
+}
+
+.row, .col {
+  background-color: black;
+}
+
+button {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
