@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- Toaster -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Days JS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/script.js" defer></script>
+    <title>TODO APP</title>
+</head>
+
+<body class="bg-secondary ">
+    <header>
+        <div id="time" class="text-center  text-light bg-danger p-2 fw-bolder"> 00:00:00</div>
+        <nav class="navbar navbar-expand-lg  navbar-primary bg-primary">
+            <div class="container-xxl ">
+                <a class="navbar-brand text-light" href="#">My Todo App </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-light navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex text-light">
+                        <p>Hi, <b><i id="name">User</i></b> !</p>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container-xxl p-2 p-sm-5 ">
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col  text-center text-primary">
+                            <h1>Add Your Tasks</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col p-2 p-sm-5 ">
+                            <div class="card p-3 p-sm-5">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-2"><input class="form-control" id="title" type="text"
+                                            placeholder="Title" /></div>
+                                    <div class="col-12 col-md-6 mb-2"><input type="text" id="location"
+                                            class="form-control" placeholder="Location" /></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><textarea placeholder="Description" id="description"
+                                            class="form-control my-2"></textarea></div>
+                                        </div>
+                                        <button id="changeTask" style="display: none;" class="btn btn-danger mt-sm-5 mx-5">Update Task</button>
+                                        <button onclick="addTask()" id="addTask" class="btn btn-danger mx-5 mt-sm-5 ">Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xxl py-5 card">
+                <div class="row text-center mb-4">
+                    <div class="col">
+                        <h1 class="text-primary">Your Tasks</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col" id="ifEmpty">
+                        <!-- <table class="table mw-100">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Discription</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody"></tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" bg-primary text-light text-center p-2">
+        <p><b>&copy; 2023. All Right Reserved By <a class="text-light"
+                    href="www.umairahmad.net">www.umairahmad.net</a></b></p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

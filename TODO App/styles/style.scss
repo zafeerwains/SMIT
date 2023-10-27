@@ -1,0 +1,13 @@
+$primary: #1d3557;
+$secondary: #f1faee;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
