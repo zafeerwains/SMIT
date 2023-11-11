@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\config",
+    "\\src\\pages",
+    "\\src\\pages\\Dashboard",
+    "\\src\\pages\\Dashboard\\Home",
+    "\\src\\pages\\Frontend",
+    "\\src\\pages\\Frontend\\Home"
+  ],
+  "SelectedNode": "\\src\\pages\\Frontend\\Home\\Hero.js",
+  "PreviewInSolutionExplorer": false
+}
